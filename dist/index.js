@@ -1,11 +1,3 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -16,7 +8,30 @@
   \**********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar Button = function Button(_a) {\n  var border = _a.border,\n    color = _a.color,\n    children = _a.children,\n    height = _a.height,\n    onClick = _a.onClick,\n    radius = _a.radius,\n    width = _a.width;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"button\", {\n    onClick: onClick,\n    style: {\n      backgroundColor: color,\n      border: border,\n      borderRadius: radius,\n      height: height,\n      width: width\n    }\n  }, children);\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Button);\n\n//# sourceURL=webpack://typescript-webpack/./src/component/button.tsx?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var Button = function Button(_a) {
+  var border = _a.border,
+    color = _a.color,
+    children = _a.children,
+    height = _a.height,
+    onClick = _a.onClick,
+    radius = _a.radius,
+    width = _a.width;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: onClick,
+    style: {
+      backgroundColor: color,
+      border: border,
+      borderRadius: radius,
+      height: height,
+      width: width
+    }
+  }, children);
+};
+/* harmony default export */ __webpack_exports__["default"] = (Button);
 
 /***/ }),
 
@@ -26,27 +41,43 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
   \***********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar MyCounter = function MyCounter(_a) {\n  var _b = _a.value,\n    value = _b === void 0 ? 0 : _b;\n  var _c = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(value),\n    counter = _c[0],\n    setCounter = _c[1];\n  var onMinus = function onMinus() {\n    setCounter(function (prev) {\n      return prev - 1;\n    });\n  };\n  var onPlus = function onPlus() {\n    setCounter(function (prev) {\n      return prev + 1;\n    });\n  };\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"Counter: \", counter), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"button\", {\n    onClick: onMinus\n  }, \"-\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"button\", {\n    onClick: onPlus\n  }, \"+\"));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (MyCounter);\n\n//# sourceURL=webpack://typescript-webpack/./src/component/counter.tsx?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-/***/ }),
-
-/***/ "./src/index.ts":
-/*!**********************!*\
-  !*** ./src/index.ts ***!
-  \**********************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Button\": function() { return /* reexport safe */ _component_button__WEBPACK_IMPORTED_MODULE_1__[\"default\"]; },\n/* harmony export */   \"MyCounter\": function() { return /* reexport safe */ _component_counter__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; }\n/* harmony export */ });\n/* harmony import */ var _component_counter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component/counter */ \"./src/component/counter.tsx\");\n/* harmony import */ var _component_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./component/button */ \"./src/component/button.tsx\");\n\n\n\n\n//# sourceURL=webpack://typescript-webpack/./src/index.ts?");
+var MyCounter = function MyCounter(_a) {
+  var _b = _a.value,
+    value = _b === void 0 ? 0 : _b;
+  var _c = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(value),
+    counter = _c[0],
+    setCounter = _c[1];
+  var onMinus = function onMinus() {
+    setCounter(function (prev) {
+      return prev - 1;
+    });
+  };
+  var onPlus = function onPlus() {
+    setCounter(function (prev) {
+      return prev + 1;
+    });
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Counter: ", counter), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: onMinus
+  }, "-"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: onPlus
+  }, "+"));
+};
+/* harmony default export */ __webpack_exports__["default"] = (MyCounter);
 
 /***/ }),
 
 /***/ "react":
-/*!************************!*\
-  !*** external "React" ***!
-  \************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** external {"Children":{},"__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED":{"ReactCurrentDispatcher":{"current":null},"ReactCurrentBatchConfig":{"transition":null},"ReactCurrentOwner":{"current":null},"ReactDebugCurrentFrame":{"getCurrentStack":null},"ReactCurrentActQueue":{"current":null,"isBatchingLegacy":false,"didScheduleLegacyUpdate":false}},"version":"18.2.0"} ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ (function(module) {
 
-module.exports = React;
+module.exports = undefined;
 
 /***/ })
 
@@ -118,11 +149,23 @@ module.exports = React;
 /******/ 	}();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.ts");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+!function() {
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Button": function() { return /* reexport safe */ _component_button__WEBPACK_IMPORTED_MODULE_1__["default"]; },
+/* harmony export */   "MyCounter": function() { return /* reexport safe */ _component_counter__WEBPACK_IMPORTED_MODULE_0__["default"]; }
+/* harmony export */ });
+/* harmony import */ var _component_counter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component/counter */ "./src/component/counter.tsx");
+/* harmony import */ var _component_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./component/button */ "./src/component/button.tsx");
+
+
+
+}();
 /******/ })()
 ;
+//# sourceMappingURL=index.js.map
