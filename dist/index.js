@@ -12,24 +12,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-var Button = function Button(_a) {
-  var border = _a.border,
-    color = _a.color,
-    children = _a.children,
-    height = _a.height,
-    onClick = _a.onClick,
-    radius = _a.radius,
-    width = _a.width;
+var Button = function Button(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: onClick,
+    onClick: props.onClick,
     style: {
-      backgroundColor: color,
-      border: border,
-      borderRadius: radius,
-      height: height,
-      width: width
+      backgroundColor: props.color,
+      border: props.border,
+      borderRadius: props.radius,
+      height: props.height,
+      width: props.width
     }
-  }, children);
+  }, props.children);
 };
 /* harmony default export */ __webpack_exports__["default"] = (Button);
 

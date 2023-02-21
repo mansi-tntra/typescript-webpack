@@ -1,37 +1,29 @@
 import React from "react";
 
 
-interface Props {
+interface buttonProps {
   border: string;
   color: string;
-  children?: React.ReactNode;
+  children?: string;
   height: string;
   onClick: () => void;
   radius: string
   width: string;
 }
 
-const Button = ({ 
-    border,
-    color,
-    children,
-    height,
-    onClick, 
-    radius,
-    width
-  } : Props) => { 
+const Button = (props: buttonProps) => { 
   return (
     <button 
-      onClick={onClick}
+      onClick={props.onClick}
       style={{
-         backgroundColor: color,
-         border,
-         borderRadius: radius,
-         height,
-         width
+         backgroundColor: props.color,
+         border: props.border,
+         borderRadius: props.radius,
+         height : props.height,
+         width : props.width
       }}
     >
-    {children}
+    {props.children}
     </button>
   );
 }
